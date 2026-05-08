@@ -1,0 +1,22 @@
+# F1 Driver Fingerprinting via Telemetry Clustering
+# Core ML & Data
+fastf1>=3.3.0
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.11.0
+scikit-learn>=1.3.0
+
+# Unsupervised Learning
+umap-learn>=0.5.5
+hdbscan>=0.8.33
+
+# Visualization
+plotly>=5.18.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+
+# Dashboard
+streamlit>=1.30.0
+
+# Utilities
+joblib>=1.3.0
