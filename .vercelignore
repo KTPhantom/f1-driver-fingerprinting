@@ -1,13 +1,6 @@
-# Ignore Python backend files
-app.py
-backend/
-requirements.txt
-src/
-config.py
-*.py
-venv/
-__pycache__/
-.venv/
-
-# Ignore Node modules (will be reinstalled)
-**/node_modules/
+# Only deploy the frontend app to Vercel
+*
+!frontend/
+!frontend/**
+!vercel.json
+!.vercelignore

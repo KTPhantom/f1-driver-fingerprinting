@@ -95,6 +95,16 @@ Open [http://localhost:3000/dashboard](http://localhost:3000/dashboard) for the 
 
 > **Note:** First load of a circuit takes 30-60s as FastF1 downloads and caches telemetry data. Subsequent loads are instant (in-memory LRU cache).
 
+### Vercel Deployment
+
+This project is configured to deploy the Next.js frontend from the `frontend/` folder.
+
+- The root `vercel.json` forces Vercel to build `frontend/package.json` with `@vercel/next`.
+- Backend API calls are controlled by `NEXT_PUBLIC_API_URL`.
+- Set `NEXT_PUBLIC_API_URL` in Vercel environment variables to the URL of your hosted FastAPI backend.
+
+If you want to deploy only the frontend on Vercel, you can host the backend separately and point the frontend to it.
+
 ---
 
 ## 🛠️ Tech Stack
