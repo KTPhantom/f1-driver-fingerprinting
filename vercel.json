@@ -1,10 +1,8 @@
 {
-  "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/.next",
-  "installCommand": "cd frontend && npm install",
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
   "framework": "nextjs",
   "nodeVersion": "18.x",
-  "env": {
-    "NEXT_PUBLIC_API_URL": "https://your-backend-url.com"
-  }
+  "rootDirectory": "frontend"
 }
